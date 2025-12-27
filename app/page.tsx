@@ -144,7 +144,7 @@ export default function HomePage() {
             <div className="relative animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden group">
                 <img
-                  src="https://amirjonkarimov.uz/arabic-calligraphy-and-books.png"
+                  src="/image.png"
                   alt="Arabic Learning"
                   className="w-full h-full object-cover rounded-3xl transition-transform duration-500 group-hover:scale-110"
                   loading="eager"
