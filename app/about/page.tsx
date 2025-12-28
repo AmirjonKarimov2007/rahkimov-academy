@@ -288,7 +288,7 @@ export default function AboutPage() {
           <ScrollReveal>
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-foreground mb-4">
-                Bizning akademiya
+                Islom Siyosiy akademiyasi
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Rahimov Academy'ning sinf xonalari va o'quv jarayonini videoda
