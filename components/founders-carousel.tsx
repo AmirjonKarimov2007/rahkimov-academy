@@ -6,9 +6,9 @@ import { Card, CardContent } from "@/components/ui/card"
 
 function FoundersGallery() {
   const founder = {
-    name: "Amirjon Rahimov",
+    name: "Ma’rufjon Rahimov",
     role: "Bosh direktori va O'qituvchi",
-    bio: "15+ yil tajriba bilan arab tilini professional darajada o'retadi. Xalqaro sertifikatlarga ega va o'quvchilari tez orada xalqaro imtixonlarida muvaffaq bo'ladi. Rahimov Academy ni tashkil etib, minglab o'quvchiga arab tilini o'rgata kelmoqda.",
+    bio: "Rahimov Academy Arab tili markazi   asoschisi Oʻzbekiston xalqaro islom akademiyasi bitiruvchisi Arab tili grammatikasi bo'yicha 6 yillik tajribaga ega expert Arab tili fonetikasida 10 yildan ortiq tajriba Imom Abu Zakarariyo Yahyo ibn Sharaf an-Navaviy Dimashqiyning “Arbain” asarlaridan  “Jamiul u’lum val hikam” nomli sharhi asosida Shayx Ahmad Sa'd Damanhuriy al-Misriydan ijoza sohibi Imom Jazariyning “Manzumatul muqoddima” asaridan Dr Ayman Suvayd Rushdiy sharhi asosida Jahongir qori Ne’matovdan ijoza sohibi Imom Termiziyning \"Sunani Termiziy\" hadis to'plamidan Alimardon Mirahmaddan muallifgacha ijoza sohibi",
   }
 
   const images = [
