@@ -90,7 +90,7 @@ export default function CoursesPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">Bizning kurslar</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">Arab tili kursi ta’riflari</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
             Online va offline formatda har bir daraja uchun maxsus ishlab chiqilgan kurslar. O'zingizga qulay formatni
             tanlang va bugun o'rganishni boshlang.

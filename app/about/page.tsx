@@ -280,7 +280,7 @@ export default function AboutPage() {
             </ScrollReveal>
           </div>
         </div>
-      </section>
+      </section>  
 
       {/* Video Section */}
       <section className="py-20 px-4">

@@ -82,7 +82,7 @@ export function Footer() {
               </a>
               <div className="flex items-start gap-2 text-sm text-muted-foreground hover:text-primary hover:translate-x-1 transition-all cursor-pointer group">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                <span>Toshkent shahar, Chilonzor tumani</span>
+                <span>Toshkent shahar, Beruniy metro , Maydan ta'lim markazi</span>
               </div>
             </div>
           </div>

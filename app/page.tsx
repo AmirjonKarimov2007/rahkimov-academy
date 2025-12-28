@@ -342,7 +342,7 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Bizning kurslar
+                Online arab tili kursi ta’riflari
               </h2>
               <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 Har bir daraja uchun maxsus ishlab chiqilgan o'quv dasturlari

@@ -401,7 +401,7 @@ export default function ContactPage() {
               <div className="animate-in fade-in slide-in-from-left-4 duration-700">
                 <h2 className="text-4xl font-bold text-foreground mb-6 text-balance">Bizni topish oson</h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-pretty">
-                  O'quv markazimiz Toshkent shahrining qulay joyida - Chilonzor tumanida joylashgan. Biz sizni kutib
+                  O'quv markazimiz Toshkent shahrining qulay joyida -Toshkent shahar, Beruniy metro , Maydan ta'lim markazida joylashgan. Biz sizni kutib
                   qolamiz!
                 </p>
                 <div className="space-y-6">
