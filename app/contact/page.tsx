@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import { ThankYouModal } from "@/components/thank-you-modal"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
@@ -15,6 +15,7 @@ export default function ContactPage() {
     type: "success" | "error" | null
     message: string
   }>({ type: null, message: "" })
+  const [showThankYou, setShowThankYou] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -48,6 +49,7 @@ export default function ContactPage() {
         const phoneInput = form.querySelector("#phone") as HTMLInputElement
         if (phoneInput) phoneInput.value = "+998"
 
+        setShowThankYou(true)
         setSubmitStatus({
           type: "success",
           message: "Ma'lumotlaringiz muvaffaqiyatli yuborildi! Adminlarimiz tez orada siz bilan bog'lanishadi.",
@@ -107,7 +109,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Manzil",
-      items: ["Toshkent shahar",  "Beruniy metro", "Maydan ta'lim markazi"],
+      items: ["Toshkent shahar", "Beruniy metro", "Maydan ta'lim markazi"],
     },
     {
       icon: Clock,
@@ -121,21 +123,21 @@ export default function ContactPage() {
       name: "Instagram",
       icon: Instagram,
       url: "https://www.instagram.com/marufjon_abdurrohim/",
-      handle: "@rahimovacademy",
+      handle: "@marufjon_abdurrohim",
       color: "hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500",
     },
     {
       name: "Facebook",
       icon: Facebook,
       url: "https://www.facebook.com/marufjon.abdurrohiym?mibextid=wwXIfr&rdid=YLdUJY41s8gvgRvX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F181qSk8E67%2F%3Fmibextid%3DwwXIfr",
-      handle: "Rahimov Academy",
+      handle: "marufjon.abdurrohiym",
       color: "hover:bg-blue-600",
     },
     {
       name: "YouTube",
       icon: Youtube,
       url: "https://www.youtube.com/@marufjon_raximov",
-      handle: "@rahimovacademy",
+      handle: "@marufjon_raximov",
       color: "hover:bg-red-600",
     },
   ]
@@ -143,6 +145,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <ThankYouModal isOpen={showThankYou} onClose={() => setShowThankYou(false)} />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-secondary/30 to-background">
@@ -342,7 +345,7 @@ export default function ContactPage() {
               <CardContent className="p-0">
                 <div className="aspect-[16/9] bg-secondary/50 flex items-center justify-center overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.093064066665!2d69.2048284!3d41.33752820000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8dc694d3640d%3A0x16dcd92d3f4e1edd!2sMADYAN%20Ta%60lim!5e1!3m2!1sen!2s!4v1767068573725!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5158947228407!2d69.2078871!3d41.2825074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sChilonzor%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -401,7 +404,11 @@ export default function ContactPage() {
               <div className="animate-in fade-in slide-in-from-left-4 duration-700">
                 <h2 className="text-4xl font-bold text-foreground mb-6 text-balance">Bizni topish oson</h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-pretty">
-                  O'quv markazimiz Toshkent shahrining qulay joyida -Toshkent shahar, Beruniy metro , Maydan ta'lim markazida joylashgan. Biz sizni kutib
+                  O'quv markazimiz Toshkent shahrining qulay joyida - Toshkent shahar
+
+Beruniy metro
+
+Maydan ta'lim markazida joylashgan. Biz sizni kutib
                   qolamiz!
                 </p>
                 <div className="space-y-6">
@@ -427,6 +434,8 @@ export default function ContactPage() {
                         Telefon
                       </h3>
                       <p className="text-muted-foreground">
+                        +998 (93) 774 05 50
+                        <br />
                         +998 (93) 774 05 50
                       </p>
                     </div>

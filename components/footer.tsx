@@ -12,7 +12,7 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-4 group cursor-pointer">
               <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center group-hover:scale-105 transition-all duration-300">
                 <Image
-                  src="https://www.amirjonkarimov.uz/arabic-calligraphy-and-books.jpg"
+                  src="/logo.png"
                   alt="Rahimov Academy Logo"
                   width={48}
                   height={48}

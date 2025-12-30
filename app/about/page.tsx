@@ -271,7 +271,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden group">
                   <img
-                    src="/about-avatar.png"
+                    src="/dala.png"
                     alt="Our Academy"
                     className="w-full h-full object-cover rounded-3xl transition-transform duration-500 group-hover:scale-110 cursor-pointer"
                   />

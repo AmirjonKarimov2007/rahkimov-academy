@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, CheckCircle2, XCircle, Send } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
+import { ThankYouModal } from "@/components/thank-you-modal"
 
 export default function ConnectPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -15,6 +16,7 @@ export default function ConnectPage() {
     type: "success" | "error" | null
     message: string
   }>({ type: null, message: "" })
+  const [showThankYou, setShowThankYou] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -47,6 +49,7 @@ export default function ConnectPage() {
         const phoneInput = form.querySelector("#phone") as HTMLInputElement
         if (phoneInput) phoneInput.value = "+998"
 
+        setShowThankYou(true)
         setSubmitStatus({
           type: "success",
           message: "Arizangiz muvaffaqiyatli yuborildi! Adminlarimiz tez orada siz bilan bog'lanishadi.",
@@ -100,7 +103,7 @@ export default function ConnectPage() {
   return (
     <div className="min-h-screen">
       <Navigation />
-
+      <ThankYouModal isOpen={showThankYou} onClose={() => setShowThankYou(false)} />
       {/* Hero Section */}
       <section className="pt-32 pb-12 px-4 bg-gradient-to-b from-secondary/30 to-background">
         <div className="container mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -199,11 +202,13 @@ export default function ConnectPage() {
                         className="w-full px-5 py-4 rounded-xl border-2 border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                       >
                         <option value="">Kursni tanlang</option>
-                        <option value="online-beginner">Boshlang'ich arab tili</option>
-                        <option value="online-intermediate">CEFR A2 - B2</option>
-                        <option value="online-advanced">Sarf va Nahv</option>
-                        <option value="offline-beginner">CEFR A2 - B2 Offline</option>
-                        
+                        <option value="online-beginner">Online - Boshlang'ich daraja</option>
+                        <option value="online-intermediate">Online - O'rta daraja</option>
+                        <option value="online-advanced">Online - Yuqori daraja</option>
+                        <option value="offline-beginner">Offline - Boshlang'ich daraja</option>
+                        <option value="offline-intermediate">Offline - O'rta daraja</option>
+                        <option value="offline-advanced">Offline - Yuqori daraja</option>
+                        <option value="not-sure">Hali aniq emas</option>
                       </select>
                     </div>
 
@@ -269,7 +274,6 @@ export default function ConnectPage() {
                       </li>
                     </ul>
                   </CardContent>
-             
                 </Card>
               </ScrollReveal>
 
@@ -291,8 +295,7 @@ export default function ConnectPage() {
                         </div>
                       </a>
                       <a
-
-                        href="mailto:marufjon19941005@gmail.com"
+                        href="mailto:info@rahimovacademy.uz"
                         className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-all hover:translate-x-1 duration-300 group"
                       >
                         <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all">
@@ -300,7 +303,7 @@ export default function ConnectPage() {
                         </div>
                         <div>
                           <div className="text-xs text-muted-foreground">Email</div>
-                          <div className="font-medium text-foreground">marufjon19941005@gmail.com</div>
+                          <div className="font-medium text-foreground">info@rahimovacademy.uz</div>
                         </div>
                       </a>
                     </div>
