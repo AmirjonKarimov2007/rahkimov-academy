@@ -7,15 +7,12 @@ import { Card, CardContent } from "@/components/ui/card";
 function FoundersGallery() {
   const founder = {
     name: "Ma’rufjon Rahimov",
-    role: "Bosh direktori va O'qituvchi",
+    role: "Asoschi",
     bio: "Rahimov Academy Arab tili markazi   asoschisi. Oʻzbekiston xalqaro islom akademiyasi bitiruvchisi. Arab tili grammatikasi bo'yicha 6 yillik tajribaga ega expert. Arab tili fonetikasida 10 yildan ortiq tajriba. Imom Abu Zakarariyo Yahyo ibn Sharaf an-Navaviy Dimashqiyning “Arbain” asarlaridan  “Jamiul u’lum val hikam” nomli sharhi asosida Shayx Ahmad Sa'd Damanhuriy al-Misriydan ijoza sohibi. Imom Jazariyning “Manzumatul muqoddima” asaridan Dr Ayman Suvayd Rushdiy sharhi asosida Jahongir qori Ne’matovdan ijoza sohibi. Imom Termiziyning \"Sunani Termiziy\" hadis to'plamidan Alimardon Mirahmaddan muallifgacha ijoza sohibi.",
   };
 
   const images = [
     "/founder/1.png",
-    "/founder/2.png",
-    "/founder/3.jpg",
-    "/founder/4.JPG",
   ];
 
   const [current, setCurrent] = useState(0);
@@ -107,7 +104,7 @@ function FoundersGallery() {
             <CardContent className="p-8">
               <div className="mb-6">
                 <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold tracking-widest uppercase mb-4">
-                  Tashkil etuvchi
+                  Rahimov academy arab tili maktabi asochisi kim?
                 </div>
                 <h3 className="text-3xl font-bold text-foreground mb-2">
                   {founder.name}

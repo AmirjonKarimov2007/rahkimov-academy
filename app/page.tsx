@@ -378,9 +378,9 @@ export default function HomePage() {
                         </span>
                       </div>
                     </div>
-                    <div className="text-lg md:text-2xl font-bold text-primary mb-6">
+                    {/* <div className="text-lg md:text-2xl font-bold text-primary mb-6">
                       {course.price}
-                    </div>
+                    </div> */}
                     <Link href="/courses">
                       <Button className="w-full rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer text-sm md:text-base">
                         Batafsil ma'lumot
