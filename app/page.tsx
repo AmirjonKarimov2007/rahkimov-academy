@@ -161,11 +161,10 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Bizning tashkil etuvchilar
+                Asoschi
               </h2>
               <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-                Rahimov Academy ni tashkil etgan tajribali va mohir
-                mutaxassislarni tanishing
+                Rahimov academy arab tili maktabi asochisi kim?
               </p>
             </div>
           </ScrollReveal>
@@ -393,13 +392,13 @@ export default function HomePage() {
           </div>
           <ScrollReveal>
             <div className="text-center">
-              <Link href="/courses">
+              <Link href="/contact">
                 <Button
                   size="lg"
                   variant="outline"
                   className="rounded-full bg-transparent hover:scale-105 hover:shadow-md transition-all duration-300 cursor-pointer"
                 >
-                  Barcha kurslarni ko'rish
+                  Arab tili kursiga ro'yhatdan o'tish
                 </Button>
               </Link>
             </div>

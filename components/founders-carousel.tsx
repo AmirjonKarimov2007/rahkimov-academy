@@ -13,6 +13,10 @@ function FoundersGallery() {
 
   const images = [
     "/founder/1.png",
+    "/founder/2.jpg",
+    "/founder/3.jpg",
+    "/founder/4.jpg",
+    "/founder/5.jpg",
   ];
 
   const [current, setCurrent] = useState(0);

@@ -211,12 +211,12 @@ export default function CoursesPage() {
                                 <div className="font-medium text-foreground">{course.teacher}</div>
                               </div>
                             </div>
-                            <div className="text-right">
+                            {/* <div className="text-right">
                               <div className="text-3xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform inline-block">
-                                {course.price} so'm
+                                {course.price} 
                               </div>
                               <div className="text-sm text-muted-foreground">oyiga</div>
-                            </div>
+                            </div> */}
                           </div>
 
                           <div className="mt-6">
@@ -339,12 +339,12 @@ export default function CoursesPage() {
                                 <div className="font-medium text-foreground">{course.teacher}</div>
                               </div>
                             </div>
-                            <div className="text-right">
+                            {/* <div className="text-right">
                               <div className="text-3xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform inline-block">
                                 {course.price} so'm
                               </div>
                               <div className="text-sm text-muted-foreground">oyiga</div>
-                            </div>
+                            </div> */}
                           </div>
 
                           <div className="mt-6">
