@@ -42,7 +42,7 @@ export function ThankYouModal({ isOpen, onClose }: ThankYouModalProps) {
           <div className="bg-secondary/50 rounded-xl p-5 mb-8 border-2 border-primary/10">
             <p className="text-sm text-muted-foreground mb-3">Yangiliklar uchun bizning kanalga obuna bo'ling:</p>
             <a
-              href="https://t.me/rahimovacademy"
+              href="https://t.me/Madrasalarga_tayyorlov"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 w-full justify-center"

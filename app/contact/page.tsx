@@ -338,14 +338,13 @@ export default function ContactPage() {
               )
             })}
           </div>
-
           {/* Map Section */}
           <ScrollReveal>
             <Card className="border-border overflow-hidden mb-16 hover:shadow-2xl transition-all duration-500 cursor-pointer group">
               <CardContent className="p-0">
                 <div className="aspect-[16/9] bg-secondary/50 flex items-center justify-center overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5158947228407!2d69.2078871!3d41.2825074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sChilonzor%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.681982225607!2d69.2048284!3d41.33752820000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8dc694d3640d%3A0x16dcd92d3f4e1edd!2sMADYAN%20Ta%60lim!5e0!3m2!1sen!2s!4v1767246354374!5m2!1sen!2s"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
